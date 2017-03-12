@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+     <modules>
+         <TK1_Paymentdummies>
+             <version>1.0.0</version>
+         </TK1_Paymentdummies>
+     </modules>
+	 <global>
+	 <models>
+             <paymentdummies>
+                 <class>TK1_Paymentdummies_Model</class>
+             </paymentdummies>
+	 </models>
+	 <helpers>
+             <paymentdummies>
+                 <class>TK1_Paymentdummies_Helper</class>
+             </paymentdummies>
+	 </helpers>
+	 </global>
+    <default>
+        <payment>
+            <paypaldummy>
+                <active>1</active>
+                <model>paymentdummies/paypal</model>
+                <order_status>processing</order_status>
+                <title>Paypal Extern</title>
+            </paypaldummy>
+			<sofortdummy>
+                <active>1</active>
+                <model>paymentdummies/sofort</model>
+                <order_status>processing</order_status>
+                <title>Sofortüberweisung Extern</title>
+            </sofortdummy>
+         </payment>
+    </default>
+ </config>

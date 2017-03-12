@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <TK1_Paymentdummies>
+            <active>true</active>
+            <codePool>community</codePool>
+        </TK1_Paymentdummies>
+    </modules>
+</config>
